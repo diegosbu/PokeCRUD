@@ -33,3 +33,4 @@ C:\Personal Projects\API-Usage-Fix\API-Usage-Fix\bin\Debug\net6.0\Newtonsoft.Jso
 C:\Personal Projects\API-Usage-Fix\API-Usage-Fix\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Personal Projects\API-Usage-Fix\API-Usage-Fix\obj\Debug\net6.0\API-Usage-Fix.csproj.AssemblyReference.cache
 C:\Personal Projects\API-Usage-Fix\API-Usage-Fix\obj\Debug\net6.0\API-Usage-Fix.csproj.CopyComplete
+C:\Personal Projects\API-Usage-Fix\API-Usage-Fix\obj\Debug\net6.0\API-Usage-Fix.sourcelink.json

@@ -2,7 +2,18 @@
     ViewData["Title"] = "API Call";
 }
 
+
 <div class="text-center">
-    <h1 class="display-4">API Call</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Pokemon Search</h1>
+    <form asp-controller="Home" asp-action="API_Call" method="post">
+        <input type="text" id="pokeName" name="pokeName" placeholder="Enter a pokemon name..." value=="Form["FirstName"]"/>
+    </form>
+
+   <div>
+       @if(Model != null) {
+            <h4> @Model.pokemonName </h4>
+            <img src="@Model.pokemonImgSrc" />
+        }
+    </div>
+
 </div>
