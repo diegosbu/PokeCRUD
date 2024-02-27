@@ -1,20 +1,35 @@
 ﻿using System.Diagnostics;
+using API_Usage_Fix.Classes;
 using API_Usage_Fix.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace API_Usage_Fix.Controllers {
+namespace API_Usage_Fix.Controllers
+{
     public class HomeController : Controller {
         private readonly ILogger<HomeController> _logger;
+        private readonly AppDbContext _appDbContext;
 
-
-        public HomeController(ILogger<HomeController> logger) {
+        public HomeController(ILogger<HomeController> logger, AppDbContext appDbContext) {
             _logger = logger;
+            _appDbContext = appDbContext;
         }
 
         public IActionResult Index() {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult Login_Register() {
+            return View("UserLoginRegister");
+        }
+
+        [HttpPost]
+        public IActionResult LoginTry(IFormCollection formData) {
+            UserLoginRegister.CheckUser(_appDbContext, formData["email"], formData["password"]);
+
+            return View("Index");
         }
 
 
