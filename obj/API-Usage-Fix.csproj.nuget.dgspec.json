@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Personal Projects\\API-Usage-Fix\\API-Usage-Fix\\API-Usage-Fix.csproj": {}
+    "C:\\Users\\dsanchez\\Source\\Repos\\PokeCRUD\\API-Usage-Fix.csproj": {}
   },
   "projects": {
-    "C:\\Personal Projects\\API-Usage-Fix\\API-Usage-Fix\\API-Usage-Fix.csproj": {
+    "C:\\Users\\dsanchez\\Source\\Repos\\PokeCRUD\\API-Usage-Fix.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Personal Projects\\API-Usage-Fix\\API-Usage-Fix\\API-Usage-Fix.csproj",
+        "projectUniqueName": "C:\\Users\\dsanchez\\Source\\Repos\\PokeCRUD\\API-Usage-Fix.csproj",
         "projectName": "API-Usage-Fix",
-        "projectPath": "C:\\Personal Projects\\API-Usage-Fix\\API-Usage-Fix\\API-Usage-Fix.csproj",
+        "projectPath": "C:\\Users\\dsanchez\\Source\\Repos\\PokeCRUD\\API-Usage-Fix.csproj",
         "packagesPath": "C:\\Users\\dsanchez\\.nuget\\packages\\",
-        "outputPath": "C:\\Personal Projects\\API-Usage-Fix\\API-Usage-Fix\\obj\\",
+        "outputPath": "C:\\Users\\dsanchez\\Source\\Repos\\PokeCRUD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
