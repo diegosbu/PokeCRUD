@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics;
-using API_Usage_Fix.Classes;
-using API_Usage_Fix.Models;
+using Poke_CRUD_App.Classes;
+using Poke_CRUD_App.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace API_Usage_Fix.Controllers
+namespace Poke_CRUD_App.Controllers
 {
     public class HomeController : Controller {
         private readonly ILogger<HomeController> _logger;

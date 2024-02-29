@@ -1,7 +1,7 @@
-﻿using API_Usage_Fix.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Poke_CRUD_App.Models;
 
-namespace API_Usage_Fix.Classes {
+namespace Poke_CRUD_App.Classes {
     public class AppDbContext : DbContext {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
 

@@ -1,12 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace API_Usage_Fix.Models {
+namespace Poke_CRUD_App.Models {
     public class UsersModel {
         [Key]
-        public string? UserId { get; set; }
+        public int UserId { get; set; }
 
-        public string? UserEmail { get; set; }
+        [Column("Email")]
+        public string UserEmail { get; set; }
 
-        public string? UserHashedPwd { get; set; }
+
+        [Column("PasswordHash")]
+        public string UserHashedPwd { get; set; }
     }
 }

@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
-using API_Usage_Fix.NewFolder;
+using Poke_CRUD_App.NewFolder;
 using Microsoft.AspNetCore.Identity;
 
-namespace API_Usage_Fix.Classes {
+namespace Poke_CRUD_App.Classes {
     public class UserLoginRegister {
         private static PasswordHasher<string> pwdHasher = new PasswordHasher<string>();
 

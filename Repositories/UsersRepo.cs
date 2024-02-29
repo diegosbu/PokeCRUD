@@ -1,8 +1,8 @@
-﻿using API_Usage_Fix.Classes;
-using API_Usage_Fix.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using Poke_CRUD_App.Classes;
+using Poke_CRUD_App.Models;
 
-namespace API_Usage_Fix.NewFolder {
+namespace Poke_CRUD_App.NewFolder {
     public class UsersRepo {
 
         public static string CheckUserLogin(AppDbContext _appDbContext, string email) {

@@ -11094,11 +11094,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dsanchez\\Source\\Repos\\PokeCRUD\\Poke-CRUD-App.csproj",
-      "projectName": "Poke-CRUD-App",
-      "projectPath": "C:\\Users\\dsanchez\\Source\\Repos\\PokeCRUD\\Poke-CRUD-App.csproj",
+      "projectUniqueName": "C:\\Users\\dsanchez\\source\\repos\\PokeCRUD\\Poke_CRUD_App.csproj",
+      "projectName": "Poke_CRUD_App",
+      "projectPath": "C:\\Users\\dsanchez\\source\\repos\\PokeCRUD\\Poke_CRUD_App.csproj",
       "packagesPath": "C:\\Users\\dsanchez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dsanchez\\Source\\Repos\\PokeCRUD\\obj\\",
+      "outputPath": "C:\\Users\\dsanchez\\source\\repos\\PokeCRUD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

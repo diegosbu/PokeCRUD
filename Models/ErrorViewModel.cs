@@ -1,4 +1,4 @@
-namespace API_Usage_Fix.Models {
+namespace Poke_CRUD_App.Models {
     public class ErrorViewModel {
         public string? RequestId { get; set; }
 

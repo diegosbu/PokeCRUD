@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>API_Usage_Fix</RootNamespace>
+    <RootNamespace>Poke_CRUD_App</RootNamespace>
     <UserSecretsId>c3215009-069c-4992-959a-482323634cd2</UserSecretsId>
   </PropertyGroup>
 

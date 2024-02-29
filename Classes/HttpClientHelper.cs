@@ -1,4 +1,4 @@
-﻿namespace API_Usage_Fix.Classes
+﻿namespace Poke_CRUD_App.Classes
 {
     public static class HttpClientHelper
     {
