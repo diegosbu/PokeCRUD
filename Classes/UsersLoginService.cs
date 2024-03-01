@@ -3,12 +3,12 @@ using Poke_CRUD_App.NewFolder;
 using Microsoft.AspNetCore.Identity;
 
 namespace Poke_CRUD_App.Classes {
-    public class UserLoginRegister {
+    public class UsersLoginService {
         private static PasswordHasher<string> pwdHasher = new PasswordHasher<string>();
 
         // CheckUser - checks if provided email/password match info in db 
-        public static bool CheckUser(AppDbContext _appDbContext, string email, string password) {
-            string storedHash = UsersRepo.CheckUserLogin(_appDbContext, email);
+        public static bool CheckUserLogin(AppDbContext _appDbContext, string email, string password) {
+            string storedHash = UsersRepo.GetUserPassword(_appDbContext, email);
 
             PasswordVerificationResult passwordCheck = pwdHasher.VerifyHashedPassword(email, storedHash, password);
 
@@ -19,10 +19,11 @@ namespace Poke_CRUD_App.Classes {
             return false;
         }
 
-        // RegisterUser
-        public static bool Create(string email, string password) {
+        // RegisterUser - registers user in the db
+        public static bool RegisterUser(AppDbContext _appDbContext, string email, string password) {
             string hashedPwd = pwdHasher.HashPassword(email, password);
-            Debug.WriteLine(hashedPwd);
+
+            UsersRepo.CreateUserRecord(_appDbContext, email, hashedPwd);
 
             return true;
         }

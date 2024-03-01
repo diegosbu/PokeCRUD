@@ -27,8 +27,14 @@ namespace Poke_CRUD_App.Controllers
 
         [HttpPost]
         public IActionResult LoginTry(IFormCollection formData) {
-            UserLoginRegister.CheckUser(_appDbContext, formData["email"], formData["password"]);
+            UsersLoginService.CheckUserLogin(_appDbContext, formData["email"], formData["password"]);
 
+            return View("Index");
+        }
+
+        [HttpPost]
+        public IActionResult RegisterTry(IFormCollection formData) {
+            UsersLoginService.RegisterUser(_appDbContext, formData["email"], formData["password"]);
             return View("Index");
         }
 
