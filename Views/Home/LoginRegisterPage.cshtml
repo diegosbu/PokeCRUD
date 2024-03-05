@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = @Model.Title;
+}
+
+<h1>@Model.Title</h1>
+
+<form asp-controller="Home" asp-action="@Model.SubmitAction" method="post">
+    <label for="email"> Email: </label>
+    <input type="text" id="email" name="email" />
+
+    <label for="password"> Password: </label>
+    <input type="text" id="password" name="password" />
+    <button type="submit">@Model.SubmitPrompt</button>
+
+</form>
+
+<a asp-controller="Home" asp-action="@Model.LinkAction">@Model.LinkPrompt</a>

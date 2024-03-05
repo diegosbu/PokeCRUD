@@ -1,12 +1,10 @@
 ﻿using System.Diagnostics;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json.Linq;
 using Poke_CRUD_App.Classes;
 using Poke_CRUD_App.Models;
-using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 
-namespace Poke_CRUD_App.Controllers
-{
+namespace Poke_CRUD_App.Controllers {
     public class HomeController : Controller {
         private readonly ILogger<HomeController> _logger;
         private readonly AppDbContext _appDbContext;
@@ -20,9 +18,20 @@ namespace Poke_CRUD_App.Controllers
             return View();
         }
 
+        // Get LoginPage - renders the login form page
         [HttpGet]
-        public IActionResult Login_Register() {
-            return View("UserLoginRegister");
+        [Route("Login")]
+        public IActionResult LoginPage() {
+            LoginRegisterViewModel pageModel = new LoginRegisterViewModel("LoginTry", "RegisterPage", "Login", "New user? Create an account", "Login");
+            return View("LoginRegisterPage", pageModel);
+        }
+
+        // Get RegisterPage - renders the register form page
+        [HttpGet]
+        [Route("Register")]
+        public IActionResult RegisterPage() {
+            LoginRegisterViewModel pageModel = new LoginRegisterViewModel("RegisterTry", "LoginPage", "Register", "Existing user? Login here", "Register");
+            return View("LoginRegisterPage", pageModel);
         }
 
         [HttpPost]
@@ -41,6 +50,7 @@ namespace Poke_CRUD_App.Controllers
 
         // Get API_Call - Renders api call search page
         [HttpGet]
+        [Route("Search")]
         public IActionResult API_Call() {
             return View("API Call");
         }
@@ -73,7 +83,7 @@ namespace Poke_CRUD_App.Controllers
 
         }
 
-
+        [Route("Privacy")]
         public IActionResult Privacy() {
             return View();
         }

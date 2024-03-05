@@ -1,6 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Microsoft.AspNetCore.Identity;
 using Poke_CRUD_App.NewFolder;
-using Microsoft.AspNetCore.Identity;
 
 namespace Poke_CRUD_App.Classes {
     public class UsersLoginService {

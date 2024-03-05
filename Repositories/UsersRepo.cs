@@ -8,7 +8,11 @@ namespace Poke_CRUD_App.NewFolder {
         public static string GetUserPassword(AppDbContext _appDbContext, string email) {
             List<UsersModel> hashedPwd = _appDbContext.Users.FromSql($"SELECT * FROM dbo.Users WHERE Email = {email}").ToList();
 
-            return hashedPwd[0].UserHashedPwd;
+            if (hashedPwd.Any()) {
+                return hashedPwd[0].UserHashedPwd;
+            }
+                
+            return "";
         }
 
         public static void CreateUserRecord(AppDbContext _appDbContext, string email, string hashedPwd) {

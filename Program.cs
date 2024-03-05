@@ -1,5 +1,5 @@
-using Poke_CRUD_App.Classes;
 using Microsoft.EntityFrameworkCore;
+using Poke_CRUD_App.Classes;
 
 var builder = WebApplication.CreateBuilder(args);
 
